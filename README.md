@@ -1,0 +1,2 @@
+# shelly-window-sensors
+
