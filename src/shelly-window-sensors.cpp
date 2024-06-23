@@ -55,7 +55,7 @@ void loop()
     {
       BTHome beacon = beacons.takeFirst();
 
-      // rear door
+      // rear door, replace the mac address with the one of your beacon
       if (strcmp(beacon.getAddress().toString().c_str(), "B0:C7:DE:2C:44:45") == 0)
       {
         rearDoor = beacon.getWindowState();
@@ -69,7 +69,7 @@ void loop()
         }
       }
 
-      // front door
+      // front door, replace the mac address with the one of your beacon
       else if (strcmp(beacon.getAddress().toString().c_str(), "B0:C7:DE:61:51:52") == 0)
       {
         frontDoor = beacon.getWindowState();
